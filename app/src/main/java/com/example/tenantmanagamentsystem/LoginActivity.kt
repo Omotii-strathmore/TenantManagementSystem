@@ -1,9 +1,9 @@
 package com.example.tenantmanagamentsystem
 
 import android.net.Uri
-import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import com.example.tenantmanagamentsystem.databinding.ActivityLoginBinding
 
