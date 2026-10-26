@@ -32,9 +32,9 @@ class ViewTenantsFragment : Fragment() {
 
         if (newTenant == null) {
             binding.newTenantGroup.visibility = View.GONE
-        } else {
-            binding.newTenantGroup.visibility = View.VISIBLE
-            binding.callButton.setOnClickListener {
+        }
+        binding.callButton.setOnClickListener {
+            if (newTenant != null) {
                 val intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:${newTenant.phone}"))
                 startActivity(intent)
             }
